@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import type { PortfolioContent } from "@/content/portfolio.en";
+import { NavItem } from "./ui/NavItem";
 
 type Props = { nav: PortfolioContent["nav"] };
 
@@ -27,7 +27,9 @@ export default function Navbar({ nav }: Props) {
           root: null,
           threshold: 0,
           rootMargin:
-            window.innerWidth < 640 ? "-112px 0px 0px 0px" : "-72px 0px 0px 0px",
+            window.innerWidth < 640
+              ? "-112px 0px 0px 0px"
+              : "-72px 0px 0px 0px",
         },
       );
 
@@ -62,42 +64,30 @@ export default function Navbar({ nav }: Props) {
           <span className="text-sm font-bold tracking-tight text-black">
             {nav.name}
           </span>
-          <Link
+          <NavItem
+            kind="link"
             href={nav.langSwitchHref}
-            className="text-xs text-black hover:underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black rounded sm:hidden"
-            aria-label={nav.langSwitchAriaLabel}
+            className="text-xs sm:hidden"
+            ariaLabel={nav.langSwitchAriaLabel}
           >
             {nav.langSwitch}
-          </Link>
+          </NavItem>
         </div>
 
         <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs sm:flex-nowrap sm:gap-6">
-          <a
-            href="#projects"
-            className="whitespace-nowrap text-black hover:underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black rounded"
-          >
-            {nav.projects}
-          </a>
-          <a
-            href={nav.cvHref}
-            download
-            className="whitespace-nowrap text-black hover:underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black rounded"
-          >
+          <NavItem href="#projects">{nav.projects}</NavItem>
+          <NavItem href={nav.cvHref} download>
             {nav.cv}
-          </a>
-          <a
-            href="#contact"
-            className="whitespace-nowrap text-black hover:underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black rounded"
-          >
-            {nav.contact}
-          </a>
-          <Link
+          </NavItem>
+          <NavItem href="#contact">{nav.contact}</NavItem>
+          <NavItem
+            kind="link"
             href={nav.langSwitchHref}
-            className="hidden whitespace-nowrap text-black hover:underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black rounded sm:inline-flex"
-            aria-label={nav.langSwitchAriaLabel}
+            className="hidden sm:inline-flex"
+            ariaLabel={nav.langSwitchAriaLabel}
           >
             {nav.langSwitch}
-          </Link>
+          </NavItem>
         </div>
       </div>
     </nav>
