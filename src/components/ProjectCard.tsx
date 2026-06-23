@@ -1,5 +1,6 @@
 import type { PortfolioContent } from "@/content/portfolio.en";
 import { ButtonLink } from "./ui/ButtonLink";
+import { TechBadge } from "./ui/TechBadge";
 
 type Project = PortfolioContent["projects"][number];
 type Props = { project: Project };
@@ -26,13 +27,13 @@ export default function ProjectCard({ project }: Props) {
         ))}
       </ul>
 
-      <div className="flex flex-wrap gap-1.5">
+      <ul className="flex flex-wrap gap-2">
         {project.stack.map((tech) => (
-          <span key={tech} className="text-xs px-2 py-0.5 text-black">
-            {tech}
-          </span>
+          <li key={tech}>
+            <TechBadge>{tech}</TechBadge>
+          </li>
         ))}
-      </div>
+      </ul>
 
       {(project.links.length > 0 || project.feedback) && (
         <div className="flex flex-col gap-3 pt-4">
