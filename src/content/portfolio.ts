@@ -6,7 +6,9 @@ export const contentMap = {
   es: esContent,
 } as const;
 
-export const locales = Object.keys(contentMap) as Array<keyof typeof contentMap>;
+export const locales = Object.keys(contentMap) as Array<
+  keyof typeof contentMap
+>;
 
 export type Locale = keyof typeof contentMap;
 

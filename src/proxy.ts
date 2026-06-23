@@ -7,7 +7,7 @@ export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   const hasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
   );
 
   if (hasLocale) return NextResponse.next();

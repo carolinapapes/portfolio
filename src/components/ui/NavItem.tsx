@@ -28,7 +28,11 @@ export function NavItem(props: NavItemProps) {
 
   if (props.kind === "link") {
     return (
-      <Link href={props.href} className={className} aria-label={props.ariaLabel}>
+      <Link
+        href={props.href}
+        className={className}
+        aria-label={props.ariaLabel}
+      >
         {props.children}
       </Link>
     );
