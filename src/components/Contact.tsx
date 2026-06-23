@@ -1,6 +1,7 @@
 import type { PortfolioContent } from "@/content/portfolio.en";
 
 import Section from "./layout/Section";
+import { ButtonLink } from "./ui/ButtonLink";
 
 type Props = {
   label: PortfolioContent["nav"]["contact"];
@@ -22,13 +23,14 @@ export default function Contact({ label, contact }: Props) {
         <ul className="grid gap-3 text-sm">
           {contact.links.map((link) => (
             <li key={link.href}>
-              <a
+              <ButtonLink
                 href={link.href}
-                className="group inline-flex gap-2 text-black underline decoration-neutral-300 underline-offset-4 transition hover:decoration-black focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
+                external={link.href.startsWith("http")}
+                variant="text"
               >
                 <span>{link.label}</span>
                 <span className="text-neutral-500">{link.display}</span>
-              </a>
+              </ButtonLink>
             </li>
           ))}
         </ul>

@@ -1,4 +1,5 @@
 import type { PortfolioContent } from "@/content/portfolio.en";
+import { ButtonLink } from "./ui/ButtonLink";
 
 type Project = PortfolioContent["projects"][number];
 type Props = { project: Project };
@@ -38,15 +39,14 @@ export default function ProjectCard({ project }: Props) {
           {project.links.length > 0 && (
             <div className="flex flex-wrap gap-4">
               {project.links.map((link) => (
-                <a
+                <ButtonLink
                   key={link.href}
                   href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-black underline underline-offset-2 hover:no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black rounded"
+                  external={link.href.startsWith("http")}
+                  variant="project"
                 >
                   {link.label} ↗
-                </a>
+                </ButtonLink>
               ))}
             </div>
           )}

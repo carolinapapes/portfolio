@@ -1,4 +1,5 @@
 import type { PortfolioContent } from "@/content/portfolio.en";
+import { ButtonLink } from "./ui/ButtonLink";
 
 type Props = {
   nav: PortfolioContent["nav"];
@@ -8,7 +9,10 @@ type Props = {
 
 export default function Header({ nav, hero, stats }: Props) {
   return (
-    <header data-hero className="relative overflow-hidden border-b border-black/8">
+    <header
+      data-hero
+      className="relative overflow-hidden border-b border-black/8"
+    >
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-y-0 right-0 hidden w-[18rem] md:block"
@@ -47,27 +51,26 @@ export default function Header({ nav, hero, stats }: Props) {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <a
-                  href={hero.ctas.projects.href}
-                  className="inline-flex items-center rounded-sm border border-black px-4 py-2 text-xs font-medium text-black transition-colors hover:border-black/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-4"
-                >
+                <ButtonLink href="#projects" variant="primary">
                   {hero.ctas.projects.label}
-                </a>
-                <a
+                </ButtonLink>
+
+                <ButtonLink
                   href={hero.ctas.cv.href}
                   download
-                  className="inline-flex items-center rounded-sm border border-black/30 px-4 py-2 text-xs font-medium text-black transition-colors hover:border-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-4"
+                  variant="secondary"
                 >
                   {hero.ctas.cv.label}
-                </a>
-                <a
+                </ButtonLink>
+
+                <ButtonLink
                   href={hero.ctas.github.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-sm border border-black/30 px-4 py-2 text-xs font-medium text-black transition-colors hover:border-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-4"
+                  external
+                  variant="secondary"
                 >
                   {hero.ctas.github.label}
-                </a>
+                </ButtonLink>
+                <br />
               </div>
 
               <div className="grid gap-3 border-t border-black/8 pt-5 text-xs text-black sm:grid-cols-2">
