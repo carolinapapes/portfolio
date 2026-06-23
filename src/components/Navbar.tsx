@@ -53,17 +53,15 @@ export default function Navbar({ nav }: Props) {
 
   return (
     <nav
-      className={`fixed inset-x-0 top-0 z-50 border-b border-black/8 bg-white/90 backdrop-blur-sm transition-all duration-300 ${
+      className={`site-nav fixed inset-x-0 top-0 z-50 ${
         visible
-          ? "translate-y-0 opacity-100"
-          : "pointer-events-none -translate-y-full opacity-0"
+          ? "site-nav--visible"
+          : "site-nav--hidden"
       }`}
     >
       <div className="mx-auto flex max-w-3xl flex-col gap-3 px-6 py-3 sm:h-12 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:py-0">
         <div className="flex items-center justify-between gap-4">
-          <span className="text-sm font-bold tracking-tight text-black">
-            {nav.name}
-          </span>
+          <span className="nav-brand">{nav.name}</span>
           <NavItem
             kind="link"
             href={nav.langSwitchHref}

@@ -13,9 +13,7 @@ export default function Section({ id, label, children }: SectionProps) {
     <SplitSection
       id={id}
       aside={
-        <p className="text-xs font-medium uppercase tracking-[0.18em] text-black">
-          {label}
-        </p>
+        <p className="section-label">{label}</p>
       }
     >
       {children}

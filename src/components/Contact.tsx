@@ -29,7 +29,7 @@ export default function Contact({ label, contact }: Props) {
                 variant="text"
               >
                 <span>{link.label}</span>
-                <span className="text-neutral-500">{link.display}</span>
+                <span className="button-link__meta">{link.display}</span>
               </ButtonLink>
             </li>
           ))}

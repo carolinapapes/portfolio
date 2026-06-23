@@ -1,16 +1,10 @@
 import type { ReactNode } from "react";
 
 const buttonLinkVariants = {
-  primary:
-    "inline-flex items-center rounded-sm border border-black px-4 py-2 text-xs font-medium text-black transition-colors hover:border-black/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-4",
-
-  secondary:
-    "inline-flex items-center rounded-sm border border-black/30 px-4 py-2 text-xs font-medium text-black transition-colors hover:border-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-4",
-
-  text: "group inline-flex items-center gap-2 text-sm text-black underline decoration-neutral-300 underline-offset-4 transition hover:decoration-black focus:outline-none focus-visible:ring-2 focus-visible:ring-black",
-
-  project:
-    "inline-flex items-center text-xs font-medium text-black underline underline-offset-2 transition hover:no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black",
+  primary: "button-link--primary",
+  secondary: "button-link--secondary",
+  text: "button-link--text",
+  project: "button-link--project",
 } as const;
 
 type ButtonLinkProps = {
@@ -19,6 +13,7 @@ type ButtonLinkProps = {
   download?: boolean;
   external?: boolean;
   variant?: keyof typeof buttonLinkVariants;
+  className?: string;
 };
 
 export function ButtonLink({
@@ -27,14 +22,19 @@ export function ButtonLink({
   download,
   external,
   variant = "text",
+  className,
 }: ButtonLinkProps) {
+  const classes = ["button-link", buttonLinkVariants[variant], className]
+    .filter(Boolean)
+    .join(" ");
+
   return (
     <a
       href={href}
       download={download}
       target={external ? "_blank" : undefined}
       rel={external ? "noopener noreferrer" : undefined}
-      className={buttonLinkVariants[variant]}
+      className={classes}
     >
       {children}
     </a>

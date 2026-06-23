@@ -7,27 +7,25 @@ type Props = { project: Project };
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <article className="flex flex-col gap-5 border-t border-black/8 pt-6 first:border-t-0 first:pt-0">
-      <div className="flex flex-col gap-1">
-        <p className="text-xs text-black">{project.role}</p>
-        <h3 className="text-base font-semibold text-black">{project.title}</h3>
-        <p className="text-xs text-black">{project.subtitle}</p>
+    <article className="project-card">
+      <div className="project-card__header">
+        <p className="project-card__role">{project.role}</p>
+        <h3 className="project-card__title">{project.title}</h3>
+        <p className="project-card__subtitle">{project.subtitle}</p>
       </div>
 
-      <p className="text-sm text-black leading-relaxed">
-        {project.description}
-      </p>
+      <p className="project-card__description">{project.description}</p>
 
-      <ul className="flex flex-col gap-1.5">
+      <ul className="project-card__highlights">
         {project.highlights.map((h) => (
-          <li key={h} className="text-sm text-black flex gap-3">
-            <span className="select-none shrink-0">—</span>
+          <li key={h} className="project-card__highlight">
+            <span className="project-card__bullet">—</span>
             <span>{h}</span>
           </li>
         ))}
       </ul>
 
-      <ul className="flex flex-wrap gap-2">
+      <ul className="project-card__stack">
         {project.stack.map((tech) => (
           <li key={tech}>
             <TechBadge>{tech}</TechBadge>
@@ -36,9 +34,9 @@ export default function ProjectCard({ project }: Props) {
       </ul>
 
       {(project.links.length > 0 || project.feedback) && (
-        <div className="flex flex-col gap-3 pt-4">
+        <div className="project-card__footer">
           {project.links.length > 0 && (
-            <div className="flex flex-wrap gap-4">
+            <div className="project-card__links">
               {project.links.map((link) => (
                 <ButtonLink
                   key={link.href}
@@ -52,7 +50,7 @@ export default function ProjectCard({ project }: Props) {
             </div>
           )}
           {project.feedback && (
-            <blockquote className="pl-3 text-xs text-black italic">
+            <blockquote className="project-card__feedback">
               &ldquo;{project.feedback}&rdquo;
             </blockquote>
           )}

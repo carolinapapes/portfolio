@@ -38,9 +38,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${geist.variable} h-full antialiased`}>
-      <body className="min-h-full bg-white text-black font-sans">
-        {children}
-      </body>
+      <body className="min-h-full font-sans">{children}</body>
     </html>
   );
 }

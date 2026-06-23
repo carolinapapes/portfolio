@@ -1,8 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-const navItemClassName =
-  "whitespace-nowrap rounded text-black underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black";
+const navItemClassName = "nav-link";
 
 type BaseNavItemProps = {
   href: string;
