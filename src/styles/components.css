@@ -1,3 +1,11 @@
+.split-section__grid {
+  padding-block: var(--space-section-y);
+}
+
+.split-section--hero .split-section__aside {
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
 .button-link {
   display: inline-flex;
   align-items: center;
@@ -25,11 +33,11 @@
 }
 
 .button-link--primary {
-  border-color: var(--color-foreground);
+  border-color: var(--color-accent);
 }
 
 .button-link--primary:hover {
-  border-color: rgba(0, 0, 0, 0.55);
+  border-color: var(--color-muted-soft);
 }
 
 .button-link--secondary {
@@ -37,7 +45,7 @@
 }
 
 .button-link--secondary:hover {
-  border-color: var(--color-foreground);
+  border-color: var(--color-accent);
 }
 
 .button-link--text {
@@ -73,7 +81,7 @@
   width: fit-content;
   align-items: center;
   border: 1px solid var(--color-border-soft);
-  border-radius: var(--radius-button);
+  border-radius: var(--radius-badge);
   color: var(--color-muted);
   font-size: 0.6875rem;
   font-weight: 500;
@@ -233,7 +241,7 @@
   right: 3rem;
   height: 7rem;
   width: 7rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border-subtle);
   border-radius: 9999px;
 }
 
@@ -252,7 +260,7 @@
   top: 11rem;
   left: 1rem;
   width: 7rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid var(--color-border-subtle);
 }
 
 .project-card {
@@ -261,7 +269,8 @@
   gap: var(--space-card);
   border-top: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-card);
-  padding-top: 1.5rem;
+  box-shadow: var(--shadow-card);
+  padding-top: var(--space-card);
 }
 
 .project-card:first-child {
@@ -383,6 +392,14 @@
 }
 
 @media (min-width: 640px) {
+  .split-section--default .split-section__grid {
+    padding-block: var(--space-section-y-large);
+  }
+
+  .split-section--hero .split-section__grid {
+    padding-block: calc(var(--space-section-y-large) + 0.5rem);
+  }
+
   .hero-content {
     min-height: 34rem;
   }
@@ -401,6 +418,11 @@
 }
 
 @media (min-width: 768px) {
+  .split-section--hero .split-section__aside {
+    border-right: 1px solid var(--color-border-subtle);
+    border-bottom: 0;
+  }
+
   .hero-aside {
     padding-top: 2rem;
   }
