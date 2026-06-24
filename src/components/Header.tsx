@@ -2,6 +2,7 @@ import type { PortfolioContent } from "@/content/portfolio.en";
 
 import SplitSection from "./layout/SplitSection";
 import { ButtonLink } from "./ui/ButtonLink";
+import styles from "./Header.module.css";
 
 type Props = {
   nav: PortfolioContent["nav"];
@@ -11,7 +12,7 @@ type Props = {
 
 export default function Header({ nav, hero, stats }: Props) {
   return (
-    <header data-hero className="hero-header relative overflow-hidden">
+    <header data-hero className={styles.header}>
       <HeroDecor />
 
       <SplitSection
@@ -34,10 +35,10 @@ type HeroAsideProps = {
 
 function HeroAside({ nav, hero }: HeroAsideProps) {
   return (
-    <div className="hero-aside">
-      <p className="hero-name">{nav.name}</p>
+    <div className={styles.aside}>
+      <p className={styles.name}>{nav.name}</p>
 
-      <p className="hero-role">{hero.role}</p>
+      <p className={styles.role}>{hero.role}</p>
     </div>
   );
 }
@@ -49,14 +50,14 @@ type HeroContentProps = {
 
 function HeroContent({ hero, stats }: HeroContentProps) {
   return (
-    <div className="hero-content">
-      <div className="hero-copy">
-        <p className="hero-kicker">{hero.kicker}</p>
+    <div className={styles.content}>
+      <div className={styles.copy}>
+        <p className={styles.kicker}>{hero.kicker}</p>
 
-        <h1 className="hero-title">{hero.headline}</h1>
+        <h1 className={styles.title}>{hero.headline}</h1>
       </div>
 
-      <p className="hero-body">{hero.body}</p>
+      <p className={styles.body}>{hero.body}</p>
 
       <HeroCtas hero={hero} />
 
@@ -67,7 +68,7 @@ function HeroContent({ hero, stats }: HeroContentProps) {
 
 function HeroCtas({ hero }: { hero: PortfolioContent["hero"] }) {
   return (
-    <div className="hero-ctas">
+    <div className={styles.ctas}>
       <ButtonLink href={hero.ctas.projects.href} variant="primary">
         {hero.ctas.projects.label}
       </ButtonLink>
@@ -85,9 +86,9 @@ function HeroCtas({ hero }: { hero: PortfolioContent["hero"] }) {
 
 function HeroStats({ stats }: { stats: PortfolioContent["stats"] }) {
   return (
-    <div className="hero-stats">
+    <div className={styles.stats}>
       {stats.map((stat) => (
-        <p key={stat} className="hero-stat">
+        <p key={stat} className={styles.stat}>
           {stat}
         </p>
       ))}
@@ -97,10 +98,10 @@ function HeroStats({ stats }: { stats: PortfolioContent["stats"] }) {
 
 function HeroDecor() {
   return (
-    <div aria-hidden="true" className="hero-decor">
-      <div className="hero-decor__orb" />
-      <div className="hero-decor__frame" />
-      <div className="hero-decor__line" />
+    <div aria-hidden="true" className={styles.decor}>
+      <div className={styles.decorOrb} />
+      <div className={styles.decorFrame} />
+      <div className={styles.decorLine} />
     </div>
   );
 }

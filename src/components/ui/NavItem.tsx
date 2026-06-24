@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-
-const navItemClassName = "nav-item";
+import styles from "./NavItem.module.css";
 
 type BaseNavItemProps = {
   href: string;
@@ -22,9 +21,7 @@ type LinkNavItemProps = BaseNavItemProps & {
 type NavItemProps = AnchorNavItemProps | LinkNavItemProps;
 
 export function NavItem(props: NavItemProps) {
-  const className = props.className
-    ? `${navItemClassName} ${props.className}`
-    : navItemClassName;
+  const className = [styles.item, props.className].filter(Boolean).join(" ");
 
   if (props.kind === "link") {
     return (

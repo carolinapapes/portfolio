@@ -1,0 +1,22 @@
+.item {
+  white-space: nowrap;
+  border-radius: var(--nav-link-radius);
+  color: var(--nav-link-foreground);
+  font-family: var(--nav-link-font-family);
+  text-decoration-color: transparent;
+  text-underline-offset: 2px;
+  transition:
+    color 150ms ease,
+    text-decoration-color 150ms ease;
+}
+
+.item:hover {
+  color: var(--nav-link-hover-color);
+  text-decoration-line: underline;
+  text-decoration-color: var(--nav-link-underline-color);
+}
+
+.item:focus-visible {
+  outline: 2px solid var(--nav-link-focus-ring-color);
+  outline-offset: 4px;
+}

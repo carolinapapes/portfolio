@@ -1,0 +1,17 @@
+.badge {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  background-color: var(--tech-badge-background);
+  border-style: solid;
+  border-width: var(--tech-badge-border-width);
+  border-color: var(--tech-badge-border-color);
+  border-radius: var(--tech-badge-radius);
+  box-shadow: var(--tech-badge-shadow);
+  color: var(--tech-badge-foreground);
+  font-family: var(--tech-badge-font-family);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1rem;
+  padding: 0.25rem 0.5rem;
+}

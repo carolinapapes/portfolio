@@ -1,10 +1,11 @@
 import type { ReactNode } from "react";
+import styles from "./ButtonLink.module.css";
 
 const buttonLinkVariants = {
-  primary: "button-link--primary",
-  secondary: "button-link--secondary",
-  text: "button-link--text",
-  project: "button-link--project",
+  primary: styles.primary,
+  secondary: styles.secondary,
+  text: styles.text,
+  project: styles.project,
 } as const;
 
 type ButtonLinkProps = {
@@ -24,7 +25,7 @@ export function ButtonLink({
   variant = "text",
   className,
 }: ButtonLinkProps) {
-  const classes = ["button-link", buttonLinkVariants[variant], className]
+  const classes = [styles.button, buttonLinkVariants[variant], className]
     .filter(Boolean)
     .join(" ");
 

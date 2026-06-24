@@ -1,0 +1,88 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--project-card-gap);
+  background-color: var(--project-card-background);
+  border-style: solid;
+  border-width: var(--project-card-border-width);
+  border-color: var(--project-card-border-color);
+  border-radius: var(--project-card-radius);
+  box-shadow: var(--project-card-shadow);
+  padding: var(--project-card-padding);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.role,
+.subtitle {
+  color: var(--project-card-eyebrow-color);
+  font-family: var(--font-family-body);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.title {
+  color: var(--project-card-title-color);
+  font-family: var(--project-card-title-font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.description,
+.highlight {
+  color: var(--project-card-body-color);
+  font-family: var(--font-family-body);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.highlight {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.bullet {
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid var(--project-card-divider-color);
+  padding-top: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.feedback {
+  padding-left: 0.875rem;
+  border-left: 1px solid var(--project-card-divider-color);
+  color: var(--project-card-body-color);
+  font-family: var(--font-family-body);
+  font-size: 0.75rem;
+  font-style: italic;
+  line-height: 1rem;
+}

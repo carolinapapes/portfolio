@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import type { PortfolioContent } from "@/content/portfolio.en";
 import { NavItem } from "./ui/NavItem";
+import styles from "./Navbar.module.css";
 
 type Props = { nav: PortfolioContent["nav"] };
 
@@ -53,13 +54,15 @@ export default function Navbar({ nav }: Props) {
 
   return (
     <nav
-      className={`site-nav fixed inset-x-0 top-0 z-50 ${
-        visible ? "site-nav--visible" : "site-nav--hidden"
-      }`}
+      className={[
+        styles.nav,
+        "fixed inset-x-0 top-0 z-50",
+        visible ? styles.visible : styles.hidden,
+      ].join(" ")}
     >
       <div className="mx-auto flex max-w-3xl flex-col gap-3 px-6 py-3 sm:h-12 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:py-0">
         <div className="flex items-center justify-between gap-4">
-          <span className="nav-brand">{nav.name}</span>
+          <span className={styles.brand}>{nav.name}</span>
           <NavItem
             kind="link"
             href={nav.langSwitchHref}
@@ -76,14 +79,16 @@ export default function Navbar({ nav }: Props) {
             {nav.cv}
           </NavItem>
           <NavItem href="#contact">{nav.contact}</NavItem>
-          <NavItem
-            kind="link"
-            href={nav.langSwitchHref}
-            className="hidden sm:inline-flex"
-            ariaLabel={nav.langSwitchAriaLabel}
-          >
-            {nav.langSwitch}
-          </NavItem>
+          <div className={styles.controls}>
+            <NavItem
+              kind="link"
+              href={nav.langSwitchHref}
+              className="hidden sm:inline-flex"
+              ariaLabel={nav.langSwitchAriaLabel}
+            >
+              {nav.langSwitch}
+            </NavItem>
+          </div>
         </div>
       </div>
     </nav>

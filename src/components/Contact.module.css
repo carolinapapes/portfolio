@@ -1,0 +1,29 @@
+.content {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.heading {
+  color: var(--color-foreground);
+  font-family: var(--font-family-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 2rem;
+}
+
+.body {
+  max-width: 36rem;
+  color: var(--color-muted);
+  font-family: var(--font-family-body);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.links {
+  display: grid;
+  gap: 0.75rem;
+  font-family: var(--font-family-body);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}

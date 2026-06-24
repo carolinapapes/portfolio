@@ -2,6 +2,8 @@ import type { PortfolioContent } from "@/content/portfolio.en";
 
 import Section from "./layout/Section";
 import { ButtonLink } from "./ui/ButtonLink";
+import buttonLinkStyles from "./ui/ButtonLink.module.css";
+import styles from "./Contact.module.css";
 
 type Props = {
   label: PortfolioContent["nav"]["contact"];
@@ -11,12 +13,12 @@ type Props = {
 export default function Contact({ label, contact }: Props) {
   return (
     <Section id="contact" label={label}>
-      <div className="grid gap-5">
-        <h2 className="contact-heading">{contact.heading}</h2>
+      <div className={styles.content}>
+        <h2 className={styles.heading}>{contact.heading}</h2>
 
-        <p className="contact-body">{contact.body}</p>
+        <p className={styles.body}>{contact.body}</p>
 
-        <ul className="contact-links grid gap-3">
+        <ul className={styles.links}>
           {contact.links.map((link) => (
             <li key={link.href}>
               <ButtonLink
@@ -25,7 +27,7 @@ export default function Contact({ label, contact }: Props) {
                 variant="text"
               >
                 <span>{link.label}</span>
-                <span className="button-link__meta">{link.display}</span>
+                <span className={buttonLinkStyles.meta}>{link.display}</span>
               </ButtonLink>
             </li>
           ))}

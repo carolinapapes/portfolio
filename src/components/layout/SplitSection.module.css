@@ -1,0 +1,24 @@
+.grid {
+  padding-block: var(--space-section-y);
+}
+
+.heroAside {
+  border-bottom: 1px solid var(--hero-divider-color);
+}
+
+@media (min-width: 640px) {
+  .defaultGrid {
+    padding-block: var(--space-section-y-large);
+  }
+
+  .heroGrid {
+    padding-block: calc(var(--space-section-y-large) + 0.5rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .heroAside {
+    border-right: 1px solid var(--color-border-subtle);
+    border-bottom: 0;
+  }
+}

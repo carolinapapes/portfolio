@@ -1,0 +1,86 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--button-link-radius);
+  font-family: var(--button-link-font-family);
+  font-weight: 500;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    color 150ms ease,
+    transform 150ms ease,
+    text-decoration-color 150ms ease;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--button-link-focus-ring-color);
+  outline-offset: 4px;
+}
+
+.primary,
+.secondary {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.625rem 1rem;
+  border-style: solid;
+}
+
+.primary {
+  background-color: var(--button-link-primary-background);
+  border-color: var(--button-link-primary-border-color);
+  border-width: var(--button-link-primary-border-width);
+  box-shadow: var(--button-link-primary-shadow);
+  color: var(--button-link-primary-foreground);
+}
+
+.primary:hover {
+  transform: translateY(-1px);
+  filter: brightness(0.97);
+}
+
+.secondary {
+  background-color: var(--button-link-secondary-background);
+  border-color: var(--button-link-secondary-border-color);
+  border-width: var(--button-link-secondary-border-width);
+  box-shadow: var(--button-link-secondary-shadow);
+  color: var(--button-link-secondary-foreground);
+}
+
+.secondary:hover {
+  border-color: var(--button-link-secondary-hover-border-color);
+  transform: translateY(-1px);
+}
+
+.text {
+  gap: 0.5rem;
+  color: var(--button-link-text-foreground);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-decoration-line: underline;
+  text-decoration-color: var(--button-link-text-decoration-color);
+  text-underline-offset: 4px;
+}
+
+.text:hover {
+  color: var(--button-link-text-hover-color);
+  text-decoration-color: currentcolor;
+}
+
+.project {
+  color: var(--button-link-project-foreground);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+
+.project:hover {
+  color: var(--button-link-project-hover-color);
+  text-decoration-color: currentcolor;
+}
+
+.meta {
+  color: var(--button-link-meta-foreground);
+}

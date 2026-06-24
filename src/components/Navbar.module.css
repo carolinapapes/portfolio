@@ -1,0 +1,38 @@
+.nav {
+  border-bottom-style: solid;
+  border-bottom-width: var(--site-nav-border-width);
+  border-bottom-color: var(--site-nav-border-color);
+  background-color: var(--site-nav-background);
+  box-shadow: var(--site-nav-shadow);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition:
+    transform 300ms ease,
+    opacity 300ms ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.brand {
+  color: var(--site-nav-brand-color);
+  font-family: var(--site-nav-brand-font-family);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.25rem;
+}
+
+.controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}

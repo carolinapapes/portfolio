@@ -1,0 +1,174 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--hero-divider-color);
+  background-color: var(--hero-background);
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.name {
+  max-width: 8ch;
+  color: var(--hero-name-color);
+  font-family: var(--hero-title-font-family);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+}
+
+.role,
+.kicker {
+  color: var(--hero-role-color);
+  font-family: var(--hero-body-font-family);
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.role {
+  letter-spacing: 0.28em;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  min-height: 30rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-block: 0.5rem;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kicker {
+  letter-spacing: 0.32em;
+}
+
+.title {
+  max-width: 42rem;
+  color: var(--hero-title-color);
+  font-family: var(--hero-title-font-family);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 0.94;
+}
+
+.body {
+  max-width: 36rem;
+  color: var(--hero-body-color);
+  font-family: var(--hero-body-font-family);
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.stats {
+  display: grid;
+  gap: 0.75rem;
+  border-top: 1px solid var(--hero-stat-border-color);
+  padding-top: 1.25rem;
+  color: var(--hero-stat-foreground);
+  font-family: var(--hero-body-font-family);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.stat {
+  line-height: 1.5rem;
+}
+
+.decor {
+  pointer-events: none;
+  position: absolute;
+  inset-block: 0;
+  right: 0;
+  display: none;
+  width: 18rem;
+}
+
+.decorOrb {
+  position: absolute;
+  top: 5rem;
+  right: 3rem;
+  height: 7rem;
+  width: 7rem;
+  border: 1px solid var(--hero-decor-border-color);
+  border-radius: 9999px;
+}
+
+.decorFrame {
+  position: absolute;
+  top: 7rem;
+  right: 1.5rem;
+  height: 10rem;
+  width: 10rem;
+  transform: rotate(12deg);
+  border: 1px solid var(--hero-decor-border-color);
+}
+
+.decorLine {
+  position: absolute;
+  top: 11rem;
+  left: 1rem;
+  width: 7rem;
+  border-top: 1px solid var(--hero-decor-border-color);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .decorOrb {
+    animation: heroFloat 12s ease-in-out infinite;
+  }
+}
+
+@media (min-width: 640px) {
+  .content {
+    min-height: 34rem;
+  }
+
+  .title {
+    font-size: 3.75rem;
+  }
+
+  .body {
+    font-size: 1.125rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .aside {
+    padding-top: 2rem;
+  }
+
+  .content {
+    min-height: 40rem;
+  }
+
+  .title {
+    font-size: 4.5rem;
+  }
+
+  .decor {
+    display: block;
+  }
+}

@@ -1,6 +1,7 @@
 import type { PortfolioContent } from "@/content/portfolio.en";
 
 import Section from "./layout/Section";
+import styles from "./Languages.module.css";
 
 type Props = {
   languages: PortfolioContent["languages"];
@@ -9,10 +10,10 @@ type Props = {
 export default function Languages({ languages }: Props) {
   return (
     <Section label={languages.heading}>
-      <ul className="languages-list grid gap-2">
+      <ul className={styles.list}>
         {languages.items.map((item) => (
           <li key={item.lang}>
-            <span className="language-name">{item.lang}</span>
+            <span className={styles.name}>{item.lang}</span>
             <span> — {item.level}</span>
           </li>
         ))}
