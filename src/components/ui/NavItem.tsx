@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-const navItemClassName = "nav-link";
+const navItemClassName = "nav-item";
 
 type BaseNavItemProps = {
   href: string;

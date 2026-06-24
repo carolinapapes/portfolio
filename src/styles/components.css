@@ -19,13 +19,14 @@
 }
 
 .button-link:focus-visible,
-.nav-link:focus-visible {
+.nav-item:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 4px;
 }
 
 .button-link--primary,
 .button-link--secondary {
+  background-color: var(--color-surface);
   border: 1px solid transparent;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -80,6 +81,7 @@
   display: inline-flex;
   width: fit-content;
   align-items: center;
+  background-color: var(--color-surface);
   border: 1px solid var(--color-border-soft);
   border-radius: var(--radius-badge);
   color: var(--color-muted);
@@ -127,14 +129,14 @@
   line-height: 1.25rem;
 }
 
-.nav-link {
+.nav-item {
   white-space: nowrap;
   border-radius: var(--radius-button);
   color: var(--color-foreground);
   text-underline-offset: 2px;
 }
 
-.nav-link:hover {
+.nav-item:hover {
   text-decoration-line: underline;
 }
 
@@ -266,6 +268,7 @@
 .project-card {
   display: flex;
   flex-direction: column;
+  background-color: var(--color-surface);
   gap: var(--space-card);
   border-top: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-card);
