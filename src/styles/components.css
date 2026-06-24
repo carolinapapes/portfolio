@@ -339,6 +339,43 @@
   line-height: 1rem;
 }
 
+.contact-heading {
+  color: var(--color-foreground);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 2rem;
+}
+
+.contact-body {
+  max-width: 36rem;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.contact-links {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.languages-list {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.language-name {
+  color: var(--color-foreground);
+  font-weight: 500;
+}
+
+.footer-copy {
+  color: var(--color-foreground);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .hero-decor__orb {
     animation: heroFloat 12s ease-in-out infinite;

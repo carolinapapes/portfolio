@@ -9,10 +9,10 @@ type Props = {
 export default function Languages({ languages }: Props) {
   return (
     <Section label={languages.heading}>
-      <ul className="grid gap-2 text-sm text-neutral-700">
+      <ul className="languages-list grid gap-2">
         {languages.items.map((item) => (
           <li key={item.lang}>
-            <span className="font-medium text-black">{item.lang}</span>
+            <span className="language-name">{item.lang}</span>
             <span> — {item.level}</span>
           </li>
         ))}
