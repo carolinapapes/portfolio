@@ -1,5 +1,9 @@
 @import "tailwindcss";
 @import "../styles/tokens/semantic.css";
+@import "../styles/themes/minimal.css";
+@import "../styles/themes/neobrutalism.css";
+@import "../styles/themes/futuristic.css";
+@import "../styles/themes/terminal.css";
 @import "../styles/components/components.css";
 @import "../styles/base/html.css";
 @import "../styles/base/animations.css";

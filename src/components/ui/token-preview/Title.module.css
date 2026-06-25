@@ -1,0 +1,9 @@
+.title {
+  margin: 0;
+  color: var(--token-preview-title-color);
+  font-family: var(--token-preview-title-font-family);
+  font-size: var(--token-preview-title-font-size);
+  font-weight: var(--token-preview-title-font-weight);
+  letter-spacing: var(--token-preview-title-letter-spacing);
+  line-height: var(--token-preview-title-line-height);
+}

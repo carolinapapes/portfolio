@@ -1,0 +1,28 @@
+[data-theme="terminal"] {
+  --color-background: #050805;
+  --color-surface: #0b120b;
+  --color-foreground: #d6ffd6;
+  --color-muted: #8bcf8b;
+  --color-accent: #7cff7c;
+  --color-accent-contrast: #050805;
+  --color-border: #2e7d32;
+  --color-border-soft: rgb(124 255 124 / 0.34);
+  --color-shadow: #7cff7c;
+
+  --radius-card: 4px;
+  --radius-button: 4px;
+
+  --space-card: 24px;
+  --space-gap: 12px;
+
+  --border-width-card: 1px;
+  --border-width-button: 1px;
+
+  --shadow-card: 0 0 40px rgb(124 255 124 / 0.14);
+  --shadow-button: 0 0 18px rgb(124 255 124 / 0.22);
+
+  --font-family-heading: "Courier New", ui-monospace, monospace;
+  --font-family-body: "Courier New", ui-monospace, monospace;
+  --font-weight-heading: 700;
+  --letter-heading: -0.03em;
+}

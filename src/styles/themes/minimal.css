@@ -1,0 +1,31 @@
+[data-theme="minimal"] {
+  --color-background: #fbf8f3;
+  --color-surface: #fffefa;
+  --color-surface-translucent: rgb(255 255 255 / 0.72);
+  --color-foreground: #171717;
+  --color-muted: #726a60;
+  --color-muted-soft: rgb(114 106 96 / 0.82);
+  --color-muted-subtle: rgb(114 106 96 / 0.62);
+  --color-accent: #80664f;
+  --color-accent-contrast: #ffffff;
+  --color-border: #e5ddd2;
+  --color-border-soft: rgb(229 221 210 / 0.72);
+  --color-shadow: #171717;
+
+  --radius-card: 30px;
+  --radius-button: 999px;
+
+  --space-card: 34px;
+  --space-gap: 20px;
+
+  --border-width-card: 1px;
+  --border-width-button: 1px;
+
+  --shadow-card: 0 24px 90px rgb(23 23 23 / 0.055);
+  --shadow-button: none;
+
+  --font-family-heading: Georgia, "Times New Roman", serif;
+  --font-family-body: Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-weight-heading: 500;
+  --letter-heading: -0.06em;
+}

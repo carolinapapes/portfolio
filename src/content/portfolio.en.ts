@@ -29,6 +29,42 @@ export const content = {
   ],
   projects: [
     {
+      title: "Design Tokens Theme System",
+      subtitle: "Token-driven visual system for a frontend portfolio",
+      role: "Frontend Developer / UI Systems",
+      description:
+        "Personal portfolio project focused on building a scalable design-token architecture. I created a four-layer token system to separate raw values, base design decisions, semantic theme tokens, and component-level styling decisions. The goal was to show how one reusable interface can support multiple visual styles without duplicating React components.",
+      stack: [
+        "React",
+        "TypeScript",
+        "Next.js",
+        "CSS Variables",
+        "Tailwind CSS",
+        "Design Tokens",
+        "Style Dictionary",
+        "Storybook",
+        "Figma",
+      ],
+      highlights: [
+        "Defined a four-layer token architecture: values, base tokens, semantic theme tokens, and component tokens.",
+        "Refactored reusable portfolio components to consume semantic CSS classes and token-ready variables.",
+        "Created a theme system where the same card, button, badge, and navigation components can adapt to Minimal, Neobrutalism, and Futuristic visual styles.",
+        "Mapped component-level tokens to semantic theme decisions to make the system more flexible and avoid hardcoded styling.",
+        "Prepared the token structure for a future Figma / Tokens Studio workflow and Storybook documentation.",
+      ],
+      links: [
+        {
+          label: "Case study",
+          href: "en/projects/design-tokens",
+        },
+        {
+          label: "Repository",
+          href: "https://github.com/carolinapapes/portfolio",
+        },
+      ],
+      feedback: null,
+    },
+    {
       title: "Transcendence",
       subtitle: "Full-stack real-time web platform",
       role: "Tech Lead / Frontend & Full-Stack Developer",
@@ -120,6 +156,41 @@ export const content = {
         display: "github.com/carolinapapes",
       },
     ],
+  },
+  showcase: {
+    label: "Four-layer token system",
+    title: "One decision, controlled impact",
+    body: "This preview uses the same card and button markup in all three columns. The visual difference comes from semantic token variables: color, typography, spacing, border width, radius, and shadow.",
+    preview: {
+      eyebrow: "Featured project",
+      title: "Design Tokens Showcase",
+      body: "Semantic tokens define meaning. Component tokens decide how each pattern responds to that meaning.",
+      nav: {
+        overview: "Overview",
+        details: "Details",
+      },
+      badges: ["Primary accent", "Quiet badges", "Stable cards"],
+      primaryCta: "Primary action",
+      secondaryCta: "Secondary action",
+    },
+    themes: {
+      minimal: {
+        name: "Minimal",
+        note: "Accent is concentrated on actions while the surrounding structure stays restrained.",
+      },
+      neobrutalism: {
+        name: "Neobrutalism",
+        note: "Borders and shadows become louder without forcing badges or cards to inherit the accent.",
+      },
+      futuristic: {
+        name: "Futuristic",
+        note: "Actions glow in cyan while the card structure and badge borders stay visually separate.",
+      },
+      terminal: {
+        name: "Terminal",
+        note: "Monospace typography, dark surfaces, and green accents create a focused command-line mood.",
+      },
+    },
   },
   footer: {
     copy: "Carolina Papes · Frontend Developer · Barcelona",

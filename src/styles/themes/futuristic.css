@@ -1,0 +1,33 @@
+[data-theme="futuristic"] {
+  --color-background: #06101e;
+  --color-surface: #0b1a30;
+  --color-surface-translucent: rgb(11 26 48 / 0.84);
+  --color-foreground: #e8f5ff;
+  --color-muted: #91a9c7;
+  --color-muted-soft: rgb(145 169 199 / 0.78);
+  --color-muted-subtle: rgb(145 169 199 / 0.6);
+  --color-accent: #35d9ff;
+  --color-accent-contrast: #06101e;
+  --color-border: #2b5977;
+  --color-border-soft: rgb(43 89 119 / 0.72);
+  --color-shadow: #35d9ff;
+
+  --radius-card: 14px;
+  --radius-button: 10px;
+
+  --space-card: 24px;
+  --space-gap: 16px;
+
+  --border-width-card: 1px;
+  --border-width-button: 1px;
+
+  --shadow-card: 0 0 48px rgb(53 217 255 / 0.22);
+  --shadow-button: 0 0 24px rgb(53 217 255 / 0.2);
+
+  --font-family-heading:
+    "SFMono-Regular", Consolas, "Liberation Mono", ui-monospace, monospace;
+  --font-family-body:
+    "SFMono-Regular", Consolas, "Liberation Mono", ui-monospace, monospace;
+  --font-weight-heading: 700;
+  --letter-heading: -0.03em;
+}

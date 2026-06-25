@@ -1,0 +1,13 @@
+.card {
+  display: flex;
+  min-height: var(--token-preview-card-min-height);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--token-preview-card-padding);
+  border-style: solid;
+  border-width: var(--token-preview-card-border-width);
+  border-color: var(--token-preview-card-border-color);
+  border-radius: var(--token-preview-card-radius);
+  background: var(--token-preview-card-background);
+  box-shadow: var(--token-preview-card-shadow);
+}
