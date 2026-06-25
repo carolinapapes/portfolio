@@ -1,0 +1,76 @@
+:root {
+  --button-link-focus-ring-color: var(--color-accent);
+  --button-link-font-family: var(--font-family-body);
+  --button-link-font-size: 0.75rem;
+  --button-link-font-weight: 500;
+  --button-link-letter-spacing: normal;
+  --button-link-text-transform: none;
+  --button-link-min-height: none;
+  --button-link-padding: 0.625rem 1rem;
+  --button-link-radius: var(--radius-button);
+  --button-link-border-width: var(--border-width-button);
+  --button-link-shadow: var(--shadow-button);
+  --button-link-meta-foreground: var(--color-muted-soft);
+  --button-link-primary-background: var(--color-accent);
+  --button-link-primary-border-color: var(--color-accent);
+  --button-link-primary-foreground: var(--color-accent-contrast);
+  --button-link-secondary-background: var(--color-surface);
+  --button-link-secondary-border-color: var(--color-border);
+  --button-link-secondary-foreground: var(--color-foreground);
+  --button-link-secondary-hover-border-color: var(--color-accent);
+  --button-link-text-decoration-color: var(--color-border-soft);
+  --button-link-text-foreground: var(--color-foreground);
+  --button-link-text-hover-color: var(--color-accent);
+  --button-link-project-foreground: var(--color-foreground);
+  --button-link-project-hover-color: var(--color-accent);
+
+  --hero-background: var(--color-background);
+  --hero-body-color: var(--color-muted-soft);
+  --hero-body-font-family: var(--font-family-body);
+  --hero-decor-border-color: var(--color-border-subtle);
+  --hero-divider-color: var(--color-border-subtle);
+  --hero-name-color: var(--color-foreground);
+  --hero-role-color: var(--color-muted-subtle);
+  --hero-stat-border-color: var(--color-border-subtle);
+  --hero-stat-foreground: var(--color-foreground);
+  --hero-title-color: var(--color-foreground);
+  --hero-title-font-family: var(--font-family-heading);
+
+  --nav-link-focus-ring-color: var(--color-accent);
+  --nav-link-font-family: var(--font-family-body);
+  --nav-link-foreground: var(--color-foreground);
+  --nav-link-hover-color: var(--color-accent);
+  --nav-link-radius: var(--radius-button);
+  --nav-link-underline-color: var(--color-border-soft);
+
+  --project-card-background: var(--color-surface);
+  --project-card-body-color: var(--color-foreground);
+  --project-card-border-color: var(--color-border-subtle);
+  --project-card-border-width: var(--border-width-card);
+  --project-card-divider-color: var(--color-border-subtle);
+  --project-card-eyebrow-color: var(--color-muted-subtle);
+  --project-card-gap: var(--space-card);
+  --project-card-padding: var(--space-card);
+  --project-card-radius: var(--radius-card);
+  --project-card-shadow: var(--shadow-card);
+  --project-card-title-color: var(--color-foreground);
+  --project-card-title-font-family: var(--font-family-body);
+
+  --section-label-font-family: var(--font-family-body);
+  --section-label-foreground: var(--color-muted-subtle);
+
+  --site-nav-background: var(--color-surface-translucent);
+  --site-nav-border-color: var(--color-border-subtle);
+  --site-nav-border-width: var(--border-width-card);
+  --site-nav-brand-color: var(--color-foreground);
+  --site-nav-brand-font-family: var(--font-family-body);
+  --site-nav-shadow: var(--shadow-card);
+
+  --tech-badge-background: var(--color-surface);
+  --tech-badge-border-color: var(--color-border-soft);
+  --tech-badge-border-width: var(--border-width-card);
+  --tech-badge-font-family: var(--font-family-body);
+  --tech-badge-foreground: var(--color-muted);
+  --tech-badge-radius: var(--radius-badge);
+  --tech-badge-shadow: var(--shadow-card);
+}
