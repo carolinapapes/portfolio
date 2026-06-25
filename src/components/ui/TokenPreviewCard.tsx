@@ -41,7 +41,11 @@ export function TokenPreviewCard({
   note,
 }: TokenPreviewCardProps) {
   return (
-    <div className={styles.preview} data-theme={themeId}>
+    <div
+      className={styles.preview}
+      data-theme={themeId}
+      data-token-preview=""
+    >
       <span className={styles.themeName}>{themeName}</span>
 
       <Card>

@@ -1,8 +1,4 @@
 .divider {
-  --token-preview-note-margin: 18px 0 0;
-  --token-preview-note-border-width: var(--border-width-card);
-  --token-preview-note-border-color: var(--color-border-soft);
-
   margin: var(--token-preview-note-margin);
   border: 0;
   border-top: var(--token-preview-note-border-width) solid

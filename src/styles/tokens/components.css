@@ -1,0 +1,143 @@
+:root,
+[data-theme] {
+  --button-link-focus-ring-color: var(--focus-ring);
+  --button-link-font-family: var(--font-body);
+  --button-link-font-size: 0.75rem;
+  --button-link-font-weight: var(--value-font-weight-medium);
+  --button-link-letter-spacing: normal;
+  --button-link-text-transform: none;
+  --button-link-min-height: 0;
+  --button-link-padding: 0.625rem 1rem;
+  --button-link-radius: var(--shape-button-radius);
+  --button-link-border-width: var(--stroke-button-width);
+  --button-link-shadow: var(--elevation-button);
+  --button-link-meta-foreground: var(--text-supporting);
+  --button-link-primary-background: var(--accent-primary);
+  --button-link-primary-border-color: var(--accent-primary);
+  --button-link-primary-foreground: var(--accent-on-primary);
+  --button-link-secondary-background: var(--surface-card);
+  --button-link-secondary-border-color: var(--border-default);
+  --button-link-secondary-foreground: var(--text-primary);
+  --button-link-secondary-hover-border-color: var(--accent-primary);
+  --button-link-text-decoration-color: var(--border-soft);
+  --button-link-text-foreground: var(--text-primary);
+  --button-link-text-hover-color: var(--accent-primary);
+  --button-link-project-foreground: var(--text-primary);
+  --button-link-project-hover-color: var(--accent-primary);
+
+  --hero-background: var(--surface-page);
+  --hero-body-color: var(--text-supporting);
+  --hero-body-font-family: var(--font-body);
+  --hero-decor-border-color: var(--border-subtle);
+  --hero-divider-color: var(--border-subtle);
+  --hero-name-color: var(--text-primary);
+  --hero-role-color: var(--text-muted);
+  --hero-stat-border-color: var(--border-subtle);
+  --hero-stat-foreground: var(--text-primary);
+  --hero-title-color: var(--text-primary);
+  --hero-title-font-family: var(--font-heading);
+
+  --nav-link-focus-ring-color: var(--focus-ring);
+  --nav-link-font-family: var(--font-body);
+  --nav-link-foreground: var(--text-primary);
+  --nav-link-hover-color: var(--accent-primary);
+  --nav-link-radius: var(--shape-button-radius);
+  --nav-link-underline-color: var(--border-soft);
+
+  --project-card-background: var(--surface-card);
+  --project-card-body-color: var(--text-primary);
+  --project-card-border-color: var(--border-subtle);
+  --project-card-border-width: var(--stroke-card-width);
+  --project-card-divider-color: var(--border-subtle);
+  --project-card-eyebrow-color: var(--text-muted);
+  --project-card-gap: var(--size-card-space);
+  --project-card-padding: var(--size-card-space);
+  --project-card-radius: var(--shape-card-radius);
+  --project-card-shadow: var(--elevation-card);
+  --project-card-title-color: var(--text-primary);
+  --project-card-title-font-family: var(--font-body);
+
+  --section-label-font-family: var(--font-body);
+  --section-label-foreground: var(--text-muted);
+
+  --site-nav-background: var(--surface-translucent);
+  --site-nav-border-color: var(--border-subtle);
+  --site-nav-border-width: var(--stroke-card-width);
+  --site-nav-brand-color: var(--text-primary);
+  --site-nav-brand-font-family: var(--font-body);
+  --site-nav-shadow: var(--elevation-card);
+
+  --tech-badge-background: var(--surface-card);
+  --tech-badge-border-color: var(--border-soft);
+  --tech-badge-border-width: var(--stroke-card-width);
+  --tech-badge-font-family: var(--font-body);
+  --tech-badge-foreground: var(--text-secondary);
+  --tech-badge-radius: var(--shape-badge-radius);
+  --tech-badge-shadow: var(--elevation-card);
+}
+
+[data-token-preview] {
+  --token-preview-card-min-height: 430px;
+  --token-preview-card-padding: var(--space-card);
+  --token-preview-card-border-width: var(--border-width-card);
+  --token-preview-card-border-color: var(--color-border);
+  --token-preview-card-radius: var(--radius-card);
+  --token-preview-card-background: var(--color-surface);
+  --token-preview-card-shadow: var(--shadow-card);
+
+  --token-preview-tag-margin-bottom: 22px;
+  --token-preview-tag-padding: 8px 10px;
+  --token-preview-tag-border-width: var(--border-width-card);
+  --token-preview-tag-border-color: var(--color-border);
+  --token-preview-tag-radius: calc(var(--radius-button) * 0.7);
+  --token-preview-tag-background: var(--color-accent);
+  --token-preview-tag-color: var(--color-accent-contrast);
+  --token-preview-tag-shadow: none;
+  --token-preview-tag-font-family: var(--font-family-body);
+  --token-preview-tag-font-size: 0.75rem;
+  --token-preview-tag-font-weight: var(--value-font-weight-black);
+  --token-preview-tag-letter-spacing: 0.08em;
+
+  --token-preview-title-color: var(--color-foreground);
+  --token-preview-title-font-family: var(--font-family-heading);
+  --token-preview-title-font-size: clamp(2.15rem, 4vw, 3.8rem);
+  --token-preview-title-font-weight: var(--font-weight-heading);
+  --token-preview-title-letter-spacing: var(--letter-heading);
+  --token-preview-title-line-height: 0.92;
+
+  --token-preview-body-margin: 20px 0 0;
+  --token-preview-body-color: var(--color-muted);
+  --token-preview-body-font-family: var(--font-family-body);
+  --token-preview-body-font-size: 1rem;
+  --token-preview-body-line-height: 1.7;
+
+  --token-preview-actions-gap: var(--space-gap);
+  --token-preview-actions-margin-top: 28px;
+
+  --token-preview-note-margin: 18px 0 0;
+  --token-preview-note-padding-top: 18px;
+  --token-preview-note-border-width: var(--border-width-card);
+  --token-preview-note-border-color: var(--color-border-soft);
+  --token-preview-note-color: var(--color-muted);
+  --token-preview-note-font-family: var(--font-family-body);
+  --token-preview-note-font-size: 0.8125rem;
+  --token-preview-note-line-height: 1.5;
+
+  --button-link-min-height: 48px;
+  --button-link-padding: 0 18px;
+  --button-link-border-width: var(--border-width-button);
+  --button-link-radius: var(--radius-button);
+  --button-link-font-family: var(--font-family-body);
+  --button-link-font-size: 0.86rem;
+  --button-link-font-weight: var(--value-font-weight-medium);
+  --button-link-letter-spacing: normal;
+  --button-link-text-transform: none;
+  --button-link-shadow: var(--shadow-button);
+  --button-link-primary-background: var(--color-accent);
+  --button-link-primary-border-color: var(--color-accent);
+  --button-link-primary-foreground: var(--color-accent-contrast);
+  --button-link-secondary-background: transparent;
+  --button-link-secondary-border-color: var(--color-accent);
+  --button-link-secondary-foreground: var(--color-accent);
+  --button-link-secondary-hover-border-color: var(--color-accent);
+}

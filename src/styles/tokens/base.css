@@ -1,0 +1,37 @@
+:root {
+  --base-surface-page: var(--value-color-white);
+  --base-surface-card: var(--value-color-white);
+  --base-surface-translucent: var(--value-color-white-alpha-88);
+
+  --base-text-primary: var(--value-color-black);
+  --base-text-secondary: var(--value-color-black-alpha-65);
+  --base-text-supporting: var(--value-color-black-alpha-60);
+  --base-text-muted: var(--value-color-black-alpha-45);
+
+  --base-accent-primary: var(--value-color-black);
+  --base-accent-on-primary: var(--value-color-white);
+
+  --base-border-default: var(--value-color-black-alpha-30);
+  --base-border-soft: var(--value-color-sand-400);
+  --base-border-subtle: var(--value-color-black-alpha-08);
+
+  --base-radius-badge: var(--value-radius-2xs);
+  --base-radius-button: var(--value-radius-2xs);
+  --base-radius-card: var(--value-radius-2xs);
+
+  --base-space-card: var(--value-space-24);
+  --base-space-gap: var(--value-space-12);
+  --base-space-section-y: var(--value-space-40);
+  --base-space-section-y-large: var(--value-space-48);
+
+  --base-border-width-button: var(--value-border-width-hairline);
+  --base-border-width-card: var(--value-border-width-hairline);
+
+  --base-shadow-button: var(--value-shadow-none);
+  --base-shadow-card: var(--value-shadow-none);
+
+  --base-font-family-body: var(--value-font-family-sans);
+  --base-font-family-heading: var(--value-font-family-display-sans);
+  --base-font-weight-heading: var(--value-font-weight-medium);
+  --base-letter-spacing-heading: var(--value-letter-spacing-tight-sm);
+}

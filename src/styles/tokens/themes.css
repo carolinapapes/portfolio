@@ -1,0 +1,183 @@
+[data-theme="minimal"] {
+  --base-surface-page: var(--value-color-sand-100);
+  --base-surface-card: var(--value-color-sand-50);
+  --base-surface-translucent: var(--value-color-white-alpha-72);
+
+  --base-text-primary: var(--value-color-charcoal-900);
+  --base-text-secondary: var(--value-color-stone-600);
+  --base-text-supporting: var(--value-color-stone-600-alpha-82);
+  --base-text-muted: var(--value-color-stone-600-alpha-62);
+
+  --base-accent-primary: var(--value-color-earth-600);
+  --base-accent-on-primary: var(--value-color-white);
+
+  --base-border-default: var(--value-color-sand-300);
+  --base-border-soft: var(--value-color-sand-300-alpha-72);
+  --base-border-subtle: var(--value-color-sand-300-alpha-42);
+
+  --base-radius-card: var(--value-radius-xl);
+  --base-radius-button: var(--value-radius-pill);
+
+  --base-space-card: var(--value-space-34);
+  --base-space-gap: var(--value-space-20);
+
+  --base-border-width-button: var(--value-border-width-1);
+  --base-border-width-card: var(--value-border-width-1);
+
+  --base-shadow-button: var(--value-shadow-none);
+  --base-shadow-card: var(--value-shadow-card-minimal);
+
+  --base-font-family-body: var(--value-font-family-minimal-body);
+  --base-font-family-heading: var(--value-font-family-serif);
+  --base-font-weight-heading: var(--value-font-weight-medium);
+  --base-letter-spacing-heading: var(--value-letter-spacing-tight-xl);
+}
+
+[data-theme="neobrutalism"] {
+  --base-surface-page: var(--value-color-cream-100);
+  --base-surface-card: var(--value-color-cream-25);
+  --base-surface-translucent: var(--value-color-white-alpha-94);
+
+  --base-text-primary: var(--value-color-black);
+  --base-text-secondary: var(--value-color-charcoal-800);
+  --base-text-supporting: var(--value-color-charcoal-900-alpha-66);
+  --base-text-muted: var(--value-color-charcoal-900-alpha-50);
+
+  --base-accent-primary: var(--value-color-pink-500);
+  --base-accent-on-primary: var(--value-color-black);
+
+  --base-border-default: var(--value-color-black);
+  --base-border-soft: var(--value-color-black);
+  --base-border-subtle: var(--value-color-charcoal-900-alpha-16);
+
+  --base-radius-card: var(--value-radius-sm);
+  --base-radius-button: var(--value-radius-xs);
+
+  --base-space-card: var(--value-space-24);
+  --base-space-gap: var(--value-space-14);
+
+  --base-border-width-button: var(--value-border-width-4);
+  --base-border-width-card: var(--value-border-width-4);
+
+  --base-shadow-button: var(--value-shadow-button-neobrutalism);
+  --base-shadow-card: var(--value-shadow-card-neobrutalism);
+
+  --base-font-family-body: var(--value-font-family-mono);
+  --base-font-family-heading: var(--value-font-family-heavy-display);
+  --base-font-weight-heading: var(--value-font-weight-black);
+  --base-letter-spacing-heading: var(--value-letter-spacing-tight-lg);
+}
+
+[data-theme="futuristic"] {
+  --base-surface-page: var(--value-color-navy-950);
+  --base-surface-card: var(--value-color-navy-900);
+  --base-surface-translucent: var(--value-color-navy-900-alpha-84);
+
+  --base-text-primary: var(--value-color-blue-50);
+  --base-text-secondary: var(--value-color-blue-300);
+  --base-text-supporting: var(--value-color-blue-300-alpha-78);
+  --base-text-muted: var(--value-color-blue-300-alpha-60);
+
+  --base-accent-primary: var(--value-color-cyan-400);
+  --base-accent-on-primary: var(--value-color-navy-950);
+
+  --base-border-default: var(--value-color-navy-700);
+  --base-border-soft: var(--value-color-navy-700-alpha-72);
+  --base-border-subtle: var(--value-color-navy-700-alpha-38);
+
+  --base-radius-card: var(--value-radius-lg);
+  --base-radius-button: var(--value-radius-md);
+
+  --base-space-card: var(--value-space-24);
+  --base-space-gap: var(--value-space-16);
+
+  --base-border-width-button: var(--value-border-width-1);
+  --base-border-width-card: var(--value-border-width-1);
+
+  --base-shadow-button: var(--value-shadow-button-futuristic);
+  --base-shadow-card: var(--value-shadow-card-futuristic);
+
+  --base-font-family-body: var(--value-font-family-mono-display);
+  --base-font-family-heading: var(--value-font-family-mono-display);
+  --base-font-weight-heading: var(--value-font-weight-bold);
+  --base-letter-spacing-heading: var(--value-letter-spacing-tight-md);
+}
+
+[data-theme="terminal"] {
+  --base-surface-page: var(--value-color-forest-950);
+  --base-surface-card: var(--value-color-forest-900);
+  --base-surface-translucent: var(--value-color-forest-900-alpha-84);
+
+  --base-text-primary: var(--value-color-green-50);
+  --base-text-secondary: var(--value-color-green-500);
+  --base-text-supporting: var(--value-color-green-500-alpha-82);
+  --base-text-muted: var(--value-color-green-500-alpha-64);
+
+  --base-accent-primary: var(--value-color-green-300);
+  --base-accent-on-primary: var(--value-color-forest-950);
+
+  --base-border-default: var(--value-color-green-700);
+  --base-border-soft: var(--value-color-green-300-alpha-34);
+  --base-border-subtle: var(--value-color-green-300-alpha-18);
+
+  --base-radius-card: var(--value-radius-xs);
+  --base-radius-button: var(--value-radius-xs);
+
+  --base-space-card: var(--value-space-24);
+  --base-space-gap: var(--value-space-12);
+
+  --base-border-width-button: var(--value-border-width-1);
+  --base-border-width-card: var(--value-border-width-1);
+
+  --base-shadow-button: var(--value-shadow-button-terminal);
+  --base-shadow-card: var(--value-shadow-card-terminal);
+
+  --base-font-family-body: var(--value-font-family-mono);
+  --base-font-family-heading: var(--value-font-family-mono);
+  --base-font-weight-heading: var(--value-font-weight-bold);
+  --base-letter-spacing-heading: var(--value-letter-spacing-tight-md);
+}
+
+[data-token-preview][data-theme="minimal"] {
+  --token-preview-tag-padding: 0;
+  --token-preview-tag-border-width: 0;
+  --token-preview-tag-border-color: transparent;
+  --token-preview-tag-radius: var(--radius-button);
+  --token-preview-tag-background: transparent;
+  --token-preview-tag-color: var(--color-accent);
+
+  --button-link-font-weight: var(--value-font-weight-semibold);
+  --button-link-letter-spacing: 0.02em;
+  --button-link-shadow: var(--value-shadow-none);
+}
+
+[data-token-preview][data-theme="neobrutalism"] {
+  --token-preview-note-border-color: var(--color-border);
+
+  --button-link-font-weight: var(--value-font-weight-black);
+  --button-link-letter-spacing: 0.06em;
+  --button-link-text-transform: uppercase;
+}
+
+[data-token-preview][data-theme="futuristic"] {
+  --token-preview-tag-shadow: var(--value-shadow-tag-futuristic);
+
+  --button-link-font-weight: var(--value-font-weight-black);
+  --button-link-letter-spacing: 0.06em;
+  --button-link-text-transform: uppercase;
+}
+
+[data-token-preview][data-theme="terminal"] {
+  --token-preview-tag-border-color: var(--color-accent);
+  --token-preview-tag-background: transparent;
+  --token-preview-tag-color: var(--color-accent);
+
+  --token-preview-title-font-size: clamp(2rem, 4vw, 3.4rem);
+  --token-preview-title-line-height: 0.98;
+
+  --token-preview-body-font-size: 0.95rem;
+
+  --button-link-font-weight: var(--value-font-weight-black);
+  --button-link-letter-spacing: 0.06em;
+  --button-link-text-transform: uppercase;
+}

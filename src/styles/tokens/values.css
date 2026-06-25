@@ -1,0 +1,115 @@
+:root {
+  --value-color-white: #ffffff;
+  --value-color-white-alpha-94: rgb(255 255 255 / 0.94);
+  --value-color-white-alpha-88: rgb(255 255 255 / 0.88);
+  --value-color-white-alpha-72: rgb(255 255 255 / 0.72);
+
+  --value-color-black: #111111;
+  --value-color-black-alpha-65: rgb(0 0 0 / 0.65);
+  --value-color-black-alpha-60: rgb(0 0 0 / 0.6);
+  --value-color-black-alpha-45: rgb(0 0 0 / 0.45);
+  --value-color-black-alpha-30: rgb(0 0 0 / 0.3);
+  --value-color-black-alpha-08: rgb(0 0 0 / 0.08);
+
+  --value-color-charcoal-900: #171717;
+  --value-color-charcoal-800: #292929;
+  --value-color-charcoal-900-alpha-66: rgb(17 17 17 / 0.66);
+  --value-color-charcoal-900-alpha-50: rgb(17 17 17 / 0.5);
+  --value-color-charcoal-900-alpha-16: rgb(17 17 17 / 0.16);
+
+  --value-color-sand-50: #fffefa;
+  --value-color-sand-100: #fbf8f3;
+  --value-color-sand-300: #e5ddd2;
+  --value-color-sand-400: #d4d0c9;
+  --value-color-sand-300-alpha-72: rgb(229 221 210 / 0.72);
+  --value-color-sand-300-alpha-42: rgb(229 221 210 / 0.42);
+  --value-color-stone-600: #726a60;
+  --value-color-stone-600-alpha-82: rgb(114 106 96 / 0.82);
+  --value-color-stone-600-alpha-62: rgb(114 106 96 / 0.62);
+  --value-color-earth-600: #80664f;
+
+  --value-color-cream-25: #fffef7;
+  --value-color-cream-100: #fff45f;
+  --value-color-pink-500: #ff4f8b;
+
+  --value-color-navy-950: #06101e;
+  --value-color-navy-900: #0b1a30;
+  --value-color-navy-900-alpha-84: rgb(11 26 48 / 0.84);
+  --value-color-navy-700: #2b5977;
+  --value-color-navy-700-alpha-72: rgb(43 89 119 / 0.72);
+  --value-color-navy-700-alpha-38: rgb(43 89 119 / 0.38);
+  --value-color-blue-50: #e8f5ff;
+  --value-color-blue-300: #91a9c7;
+  --value-color-blue-300-alpha-78: rgb(145 169 199 / 0.78);
+  --value-color-blue-300-alpha-60: rgb(145 169 199 / 0.6);
+  --value-color-cyan-400: #35d9ff;
+
+  --value-color-forest-950: #050805;
+  --value-color-forest-900: #0b120b;
+  --value-color-forest-900-alpha-84: rgb(11 18 11 / 0.84);
+  --value-color-green-50: #d6ffd6;
+  --value-color-green-300: #7cff7c;
+  --value-color-green-300-alpha-34: rgb(124 255 124 / 0.34);
+  --value-color-green-300-alpha-18: rgb(124 255 124 / 0.18);
+  --value-color-green-500: #8bcf8b;
+  --value-color-green-500-alpha-82: rgb(139 207 139 / 0.82);
+  --value-color-green-500-alpha-64: rgb(139 207 139 / 0.64);
+  --value-color-green-700: #2e7d32;
+
+  --value-radius-2xs: 0.125rem;
+  --value-radius-xs: 4px;
+  --value-radius-sm: 8px;
+  --value-radius-md: 10px;
+  --value-radius-lg: 14px;
+  --value-radius-xl: 30px;
+  --value-radius-pill: 999px;
+
+  --value-space-10: 0.625rem;
+  --value-space-12: 0.75rem;
+  --value-space-14: 0.875rem;
+  --value-space-16: 1rem;
+  --value-space-18: 1.125rem;
+  --value-space-20: 1.25rem;
+  --value-space-24: 1.5rem;
+  --value-space-28: 1.75rem;
+  --value-space-34: 2.125rem;
+  --value-space-40: 2.5rem;
+  --value-space-48: 3rem;
+
+  --value-border-width-hairline: 0.0625rem;
+  --value-border-width-1: 1px;
+  --value-border-width-4: 4px;
+
+  --value-shadow-none: none;
+  --value-shadow-card-minimal: 0 24px 90px rgb(23 23 23 / 0.055);
+  --value-shadow-card-neobrutalism: 12px 12px 0 var(--value-color-black);
+  --value-shadow-button-neobrutalism: 6px 6px 0 var(--value-color-black);
+  --value-shadow-card-futuristic: 0 0 48px rgb(53 217 255 / 0.22);
+  --value-shadow-button-futuristic: 0 0 24px rgb(53 217 255 / 0.2);
+  --value-shadow-card-terminal: 0 0 40px rgb(124 255 124 / 0.14);
+  --value-shadow-button-terminal: 0 0 18px rgb(124 255 124 / 0.22);
+  --value-shadow-tag-futuristic: 0 0 24px rgb(53 217 255 / 0.28);
+
+  --value-font-family-sans:
+    var(--font-geist-sans), "Helvetica Neue", Arial, sans-serif;
+  --value-font-family-display-sans:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --value-font-family-minimal-body: Inter, ui-sans-serif, system-ui, sans-serif;
+  --value-font-family-serif: Georgia, "Times New Roman", serif;
+  --value-font-family-mono: "Courier New", ui-monospace, monospace;
+  --value-font-family-mono-display:
+    "SFMono-Regular", Consolas, "Liberation Mono", ui-monospace, monospace;
+  --value-font-family-heavy-display:
+    "Arial Black", Impact, ui-sans-serif, system-ui, sans-serif;
+
+  --value-font-weight-medium: 500;
+  --value-font-weight-semibold: 600;
+  --value-font-weight-bold: 700;
+  --value-font-weight-black: 900;
+
+  --value-letter-spacing-tight-sm: -0.02em;
+  --value-letter-spacing-tight-md: -0.03em;
+  --value-letter-spacing-tight-lg: -0.04em;
+  --value-letter-spacing-tight-xl: -0.06em;
+}

@@ -1,14 +1,8 @@
 .note {
-  --note-padding-top: 18px;
-  --note-color: var(--color-muted);
-  --note-font-family: var(--font-family-body);
-  --note-font-size: 0.8125rem;
-  --note-line-height: 1.5;
-
   margin: 0;
-  padding-top: var(--note-padding-top);
-  color: var(--note-color);
-  font-family: var(--note-font-family);
-  font-size: var(--note-font-size);
-  line-height: var(--note-line-height);
+  padding-top: var(--token-preview-note-padding-top);
+  color: var(--token-preview-note-color);
+  font-family: var(--token-preview-note-font-family);
+  font-size: var(--token-preview-note-font-size);
+  line-height: var(--token-preview-note-line-height);
 }
