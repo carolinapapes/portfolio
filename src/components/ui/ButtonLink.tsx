@@ -1,5 +1,8 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 import styles from "./ButtonLink.module.css";
+
+const PROTOCOL_PATTERN = /^[a-zA-Z][a-zA-Z\d+\-.]*:/;
 
 const buttonLinkVariants = {
   primary: styles.primary,
@@ -17,6 +20,14 @@ type ButtonLinkProps = {
   className?: string;
 };
 
+function shouldRenderAnchor({
+  href,
+  download,
+  external,
+}: Pick<ButtonLinkProps, "href" | "download" | "external">) {
+  return download || external || href.startsWith("//") || PROTOCOL_PATTERN.test(href);
+}
+
 export function ButtonLink({
   href,
   children,
@@ -29,15 +40,23 @@ export function ButtonLink({
     .filter(Boolean)
     .join(" ");
 
+  if (shouldRenderAnchor({ href, download, external })) {
+    return (
+      <a
+        href={href}
+        download={download}
+        target={external ? "_blank" : undefined}
+        rel={external ? "noopener noreferrer" : undefined}
+        className={classes}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <a
-      href={href}
-      download={download}
-      target={external ? "_blank" : undefined}
-      rel={external ? "noopener noreferrer" : undefined}
-      className={classes}
-    >
+    <Link href={href} className={classes}>
       {children}
-    </a>
+    </Link>
   );
 }

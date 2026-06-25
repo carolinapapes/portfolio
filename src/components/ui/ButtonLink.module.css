@@ -2,9 +2,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: var(--button-link-min-height);
   border-radius: var(--button-link-radius);
   font-family: var(--button-link-font-family);
-  font-weight: 500;
+  font-size: var(--button-link-font-size);
+  font-weight: var(--button-link-font-weight);
+  letter-spacing: var(--button-link-letter-spacing);
+  text-transform: var(--button-link-text-transform);
   transition:
     background-color 150ms ease,
     border-color 150ms ease,
@@ -21,17 +25,16 @@
 
 .primary,
 .secondary {
-  font-size: 0.75rem;
   line-height: 1rem;
-  padding: 0.625rem 1rem;
+  padding: var(--button-link-padding);
   border-style: solid;
+  border-width: var(--button-link-border-width);
+  box-shadow: var(--button-link-shadow);
 }
 
 .primary {
   background-color: var(--button-link-primary-background);
   border-color: var(--button-link-primary-border-color);
-  border-width: var(--button-link-primary-border-width);
-  box-shadow: var(--button-link-primary-shadow);
   color: var(--button-link-primary-foreground);
 }
 
@@ -43,8 +46,6 @@
 .secondary {
   background-color: var(--button-link-secondary-background);
   border-color: var(--button-link-secondary-border-color);
-  border-width: var(--button-link-secondary-border-width);
-  box-shadow: var(--button-link-secondary-shadow);
   color: var(--button-link-secondary-foreground);
 }
 
